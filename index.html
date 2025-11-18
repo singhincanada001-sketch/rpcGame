@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Game</title>
+       <link rel="stylesheet" href="styles/rpcgame.css"></link>
+    </head>
+    <body>
+        
+        <h1 class="title">Rock Paper Scissor</h1>
+        <div>
+        <button onclick="userChoice='Rock';
+         pickcomputerChoice();
+         decision(userChoice,computerChoice);
+        "       
+        id="Rock"><img src="photos/Rock.png
+        " ></button>
+
+
+
+        <button onclick=" userChoice='Paper';
+         pickcomputerChoice();
+         decision(userChoice,computerChoice);
+        " 
+        id="Paper" ><img src="photos/Paper.png" ></button>
+
+
+
+
+        <button onclick=" userChoice='Scissors';
+        pickcomputerChoice();
+        decision(userChoice,computerChoice);    
+        " 
+        id="Scis"><img src="photos/Scissors.png" ></button>
+
+        
+        </div>
+
+        <p class="js-moves"></p>
+
+        <P class="js-score"></P>
+
+        <button onclick="resetScore()" id="reset">RESET</button>
+
+
+        <script src="scripts/rpcgame.js">
+        </script>
+        
+    </body>
+</html>
